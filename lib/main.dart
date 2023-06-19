@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'BottomNav.dart';
+// import 'BottomNav.dart';
+import 'TourUgHome.dart';
 
 void main() {
-  runApp(const BottomNavigationBarExampleApp());
+  runApp(const TourApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -41,6 +42,32 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           child: Column(
             children: [
+              Container(
+                child: Row(
+                  children: [
+                    Container(
+                        padding: const EdgeInsets.only(left: 25.0),
+                        // alignment: Alignment.topLeft,
+                        child: const Image(
+                          image: AssetImage('assets/logo.png'),
+                          height: 60,
+                          alignment: Alignment.topLeft,
+                        )),
+                    Container(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: const SizedBox(
+                          width: 300,
+                          child: Text(
+                            'Foods Stall: Find all your fruits and vegetables here. Shop Now\!',
+                            style: TextStyle(
+                                fontSize: 20,
+                                fontFamily: 'Raleway',
+                                color: Color.fromARGB(255, 255, 161, 85)),
+                          ),
+                        )),
+                  ],
+                ),
+              ),
               Container(
                   padding: const EdgeInsets.all(20.0),
                   child: const SizedBox(
