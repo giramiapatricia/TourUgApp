@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,12 +34,13 @@ class _MySplashState extends State<MySplash> {
     return SafeArea(
       child: Scaffold(
         body: Container(
+            color: Colors.white,
             child: const Center(
-          child: Image(
-            image: AssetImage('assets/tourUg.png'),
-            width: 300,
-          ),
-        )),
+              child: Image(
+                image: AssetImage('assets/tourUg.png'),
+                width: 300,
+              ),
+            )),
       ),
     );
   }

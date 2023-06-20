@@ -43,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             children: [
               Container(
+                color: Colors.white,
                 child: Row(
                   children: [
                     Container(
@@ -58,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: const SizedBox(
                           width: 300,
                           child: Text(
-                            'Foods Stall: Find all your fruits and vegetables here. Shop Now\!',
+                            'Foods Stall: Find all your fruits and vegetables here. Shop Now!',
                             style: TextStyle(
                                 fontSize: 20,
                                 fontFamily: 'Raleway',
