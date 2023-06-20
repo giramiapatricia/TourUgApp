@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: InputDecoration(
                       suffixIcon: Icon(
                         Icons.search_outlined,
-                        color: Colors.greenAccent,
+                        color: Color.fromARGB(255, 26, 26, 26),
                       ),
                       filled: true,
                       fillColor: Color.fromARGB(255, 255, 255, 255),
@@ -87,7 +87,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           left: 25, top: 15, bottom: 15, right: 25),
                       hintStyle: TextStyle(
                           color: Color.fromARGB(255, 35, 35, 35),
-                          fontSize: 20,
+                          fontSize: 16,
+                          fontFamily: 'Raleway',
                           fontWeight: FontWeight.w500),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(50.0)),
@@ -112,14 +113,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       const EdgeInsets.only(left: 20.0, right: 20.0, top: 25.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: const Color.fromARGB(255, 35, 78, 82),
-                    // boxShadow: const [
-                    //   BoxShadow(
-                    //     color: Color.fromARGB(255, 38, 38, 38),
-                    //     blurRadius: 1,
-                    //     offset: Offset(0, 1), // Shadow position
-                    //   ),
-                    // ],
+                    color: Color.fromARGB(255, 255, 255, 255),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color.fromARGB(255, 168, 168, 168),
+                        blurRadius: 1,
+                        offset: Offset(0, 1), // Shadow position
+                      ),
+                    ],
                   ),
                   child: Column(
                     children: [
@@ -139,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: TextStyle(
                                   fontSize: 20,
                                   fontFamily: 'Raleway',
-                                  color: Color.fromARGB(255, 255, 255, 255)),
+                                  color: Color.fromARGB(255, 29, 29, 29)),
                             ),
                           )),
                       const SizedBox(
@@ -151,7 +152,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: TextStyle(
                                   fontSize: 15,
                                   fontFamily: 'Raleway',
-                                  color: Color.fromARGB(255, 175, 175, 175)),
+                                  color: Color.fromARGB(255, 55, 55, 55)),
                             ),
                           )),
                     ],
@@ -212,41 +213,38 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.all(15),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: const Color.fromARGB(255, 35, 78, 82),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color.fromARGB(255, 173, 173, 173),
-                        blurRadius: 2,
-                        offset: Offset(0, 1), // Shadow position
-                      ),
-                    ],
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    // boxShadow: const [
+                    //   BoxShadow(
+                    //     color: Color.fromARGB(255, 173, 173, 173),
+                    //     blurRadius: 2,
+                    //     offset: Offset(0, 1), // Shadow position
+                    //   ),
+                    // ],
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
-                        width: 100,
                         padding: const EdgeInsets.all(7.5),
-                        margin: const EdgeInsets.only(left: 10.0),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 35, 78, 82),
-                          // boxShadow: const [
-                          //   BoxShadow(
-                          //     color: Color.fromARGB(255, 173, 173, 173),
-                          //     blurRadius: 2,
-                          //     offset: Offset(0, 1), // Shadow position
-                          //   ),
-                          // ],
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 173, 173, 173),
+                              blurRadius: 1,
+                              offset: Offset(0, 1), // Shadow position
+                            ),
+                          ],
                         ),
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
                             SizedBox(
                               child: Icon(
                                 Icons.dinner_dining_rounded,
                                 size: 40.0,
-                                color: Color.fromARGB(255, 255, 255, 255),
+                                color: Color.fromARGB(255, 35, 35, 35),
                               ),
                             ),
                             Padding(
@@ -257,26 +255,24 @@ class _MyHomePageState extends State<MyHomePage> {
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontFamily: 'Raleway',
-                                    color: Color.fromARGB(255, 255, 255, 255)),
+                                    color: Color.fromARGB(255, 35, 35, 35)),
                               ),
                             ),
                           ],
                         ),
                       ),
                       Container(
-                        width: 150,
                         padding: const EdgeInsets.all(7.5),
-                        margin: const EdgeInsets.only(top: 15.0, bottom: 15.0),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 35, 78, 82),
-                          // boxShadow: const [
-                          //   BoxShadow(
-                          //     color: Color.fromARGB(255, 173, 173, 173),
-                          //     blurRadius: 2,
-                          //     offset: Offset(0, 1), // Shadow position
-                          //   ),
-                          // ],
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 173, 173, 173),
+                              blurRadius: 1,
+                              offset: Offset(0, 1), // Shadow position
+                            ),
+                          ],
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -285,7 +281,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: Icon(
                                 Icons.hotel,
                                 size: 40.0,
-                                color: Color.fromARGB(255, 255, 255, 255),
+                                color: Color.fromARGB(255, 35, 35, 35),
                               ),
                             ),
                             Padding(
@@ -296,25 +292,24 @@ class _MyHomePageState extends State<MyHomePage> {
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontFamily: 'Raleway',
-                                    color: Color.fromARGB(255, 255, 255, 255)),
+                                    color: Color.fromARGB(255, 35, 35, 35)),
                               ),
                             ),
                           ],
                         ),
                       ),
                       Container(
-                        width: 100,
                         padding: const EdgeInsets.all(7.5),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: const Color.fromARGB(255, 35, 78, 82),
-                          // boxShadow: const [
-                          //   BoxShadow(
-                          //     color: Color.fromARGB(255, 173, 173, 173),
-                          //     blurRadius: 2,
-                          //     offset: Offset(0, 1), // Shadow position
-                          //   ),
-                          // ],
+                          color: Color.fromARGB(255, 255, 255, 255),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 173, 173, 173),
+                              blurRadius: 1,
+                              offset: Offset(0, 1), // Shadow position
+                            ),
+                          ],
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -323,7 +318,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: Icon(
                                 Icons.car_rental,
                                 size: 40.0,
-                                color: Color.fromARGB(255, 255, 255, 255),
+                                color: Color.fromARGB(255, 35, 35, 35),
                               ),
                             ),
                             Padding(
@@ -334,7 +329,44 @@ class _MyHomePageState extends State<MyHomePage> {
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontFamily: 'Raleway',
-                                    color: Color.fromARGB(255, 255, 255, 255)),
+                                    color: Color.fromARGB(255, 35, 35, 35)),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all(7.5),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: const Color.fromARGB(255, 255, 255, 255),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 173, 173, 173),
+                              blurRadius: 1,
+                              offset: Offset(0, 1), // Shadow position
+                            ),
+                          ],
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            SizedBox(
+                              child: Icon(
+                                Icons.landscape,
+                                size: 40.0,
+                                color: Color.fromARGB(255, 35, 35, 35),
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.all(5.0),
+                              child: Text(
+                                'Scenery',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontFamily: 'Raleway',
+                                    color: Color.fromARGB(255, 35, 35, 35)),
                               ),
                             ),
                           ],
